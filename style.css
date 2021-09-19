@@ -1,0 +1,123 @@
+
+body{
+    margin:0;
+    padding:0;
+    font-family:fantasy;
+    font-size: 16px;
+    background-image: url("bg4.jpg");
+    background-size: cover;
+    height:100vh;
+}
+
+.content{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: rgb(9, 11, 124);
+    font-family:Arial, Helvetica, sans-serif;  
+
+}
+
+.center{
+position:absolute;
+top:60%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(222, 255, 203, 0.582);
+border-radius:15px;
+}
+.center h1{
+    text-align: center;
+    color:rgb(36, 90, 5);
+    border-bottom:2px solid rgb(214, 244, 245);
+}
+.center h1 span{
+    color:rgb(240, 142, 30);
+}
+.center form{
+    padding:0 40px;
+}
+.textfield{
+    position:relative;
+    margin:30px 0;
+    color:rgb(86, 15, 219);
+    border-bottom:2px solid white;
+}
+.textfield:hover{
+    color:rgb(103, 158, 19);
+    border-bottom:2px solid greenyellow;
+}
+.textfield input{
+    background:none;
+    border:none;
+    width:100%;
+    height:40px;
+    font-size: 16px;
+    color:rgb(48, 41, 41);
+}
+.forpass a{
+    color:rgb(44, 41, 41);
+    text-decoration: none;
+    cursor:pointer
+}
+.forpass a:hover{
+    text-decoration:underline;
+    color:blue;
+    transition:0.3s;
+}
+
+
+
+.signup{
+
+    color:rgb(37, 36, 36);
+    font-size:16px;
+    text-align:center;
+    padding:15px 0px;
+}
+.signup a{
+    color:rgb(32, 31, 31);
+    text-decoration:none;
+}
+.signup a:hover{
+    text-decoration:underline;
+    color:blue;
+    transition:0.3s;
+}
+
+
+form .btn{
+    display: inline-block;
+    padding: .3rem 2rem;
+    border:.2rem solid green;
+    color: green;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: .5rem;
+}
+
+form .btn::before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 0%;
+    height: 100%;
+    background: green;
+    transition: .3s linear;
+    z-index: -1;
+
+}
+
+form .btn:hover::before{
+    width: 100%;
+    left: 0;
+
+}
+
+form .btn:hover{
+    color: #fff;
+}
