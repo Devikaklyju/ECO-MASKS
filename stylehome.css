@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(17, 16, 16);
+}
+
+
+.aboutus .btn{
+    display: inline-block;
+    padding: .8rem 3rem;
+    border:.2rem solid red;
+    color: red;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}
+
+.aboutus .btn::before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 0%;
+    height: 100%;
+    background: red;
+    transition: .3s linear;
+    z-index: -1;
+
+}
+
+.aboutus .btn:hover::before{
+    width: 100%;
+    left: 0;
+
+}
+
+.aboutus .btn:hover{
+    color: #fff;
+}
+.aboutus{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.aboutus .content{
+    flex: 1 1 40rem;
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+}
+
+.aboutus .content h3{
+    font-size: 5rem;
+    color: rgb(187, 248, 175);
+}
+
+.aboutus .content p{
+    font-size: 1.7rem;
+    color: rgb(222, 224, 79);
+    padding: 1rem 0;
+}
+
+.aboutus .image{
+    flex: 1 1 40rem;
+}
+
+.aboutus .image img{
+    width: 80%;
+    padding: 1rem;
+    animation: ease-in  3s linear infinite;
+}
